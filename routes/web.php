@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FormController;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +17,11 @@ use App\Http\Controllers\FormController;
 
 Route::get('/', [FormController::class, 'index']);
 Route::post('/createform', [FormController::class, 'createForm']);
-Route::get('/admin', function(){
-  return view('admin');
-});
+
+
+// Admin Panel
+// ======= Список url-ов  ============
+Route::get('/admin', [AdminController::class, 'index']);
+
+//  ======== Список проверок========
+Route::get('/admin/check', [AdminController::class, 'checkP']);

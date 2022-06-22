@@ -8,6 +8,9 @@
     <title>Alytics - @yield('title')</title>
   </head>
   <body>
+    <div>
+      @yield('navdiv')
+    </div>
     <div class="container">
       @yield('content')
     </div>

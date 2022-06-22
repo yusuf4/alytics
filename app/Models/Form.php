@@ -11,7 +11,7 @@ class Form extends Model
     use HasFactory;
     protected $fillable = ['urlname', 'check_povtor'];
 
-    public function proverka(){
+    public function proverkaInterval(){
       return $this->hasMany(Proverka::class, 'form_id');
     }
 }

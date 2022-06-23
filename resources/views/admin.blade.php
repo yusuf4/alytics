@@ -33,19 +33,17 @@
       $i = 1;
     ?>
     <tbody>
-      @foreach($data as $value)
+
         <tr>
           <th scope="row">{{ $i++ }}</th>
-          <td>{{date('d.m.Y',strtotime($value->created_at))}}</td>
-          <td>{{$value->urlname}}</td>
+          <td>{{$url['http_code']}}</td>
+          <td></td>
             <td>
-              @foreach($value->proverkaInterval as $interval)
-                {{$interval->check_interval}}
-              @endforeach
+
             </td>
-          <td>{{$value->check_povtor}}</td>
+          <td></td>
         </tr>
-      @endforeach
+
     </tbody>
   </table>
 @endsection

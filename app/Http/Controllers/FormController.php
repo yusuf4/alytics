@@ -16,6 +16,10 @@ class FormController extends Controller
       //dd($request->all());
       $formsave = new Form();
       $formsave->urlname = $request->urlname;
+      /*for ($i=0; $i <= 10 ; $i++) {
+        $formsave->check_povtor = $request->povtor;
+        sleep(1);
+      }*/
       $formsave->check_povtor = $request->povtor;
       $formsave->save();
 

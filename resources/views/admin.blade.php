@@ -37,7 +37,7 @@
         <tr>
           <th scope="row">{{ $i++ }}</th>
           <td>{{$url['http_code']}}</td>
-          <td></td>
+          <td>{{$http_code}}</td>
             <td>
 
             </td>
